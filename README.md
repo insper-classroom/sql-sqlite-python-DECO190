@@ -36,10 +36,11 @@ Iremos utilizar a plataforma https://sqliteonline.com/ para treinar comandos SQL
    - **Enunciado**: Liste os 5 jogos mais recentes lançados.  (copie e cole o comando e as 5 primeiras linhas do resultado aqui)
    - **Query**:
      ```sql
-      
+      SELECT * FROM vgsales_pbi ORDER BY year = 1 LIMIT 5;
      ```
    - **Resultado**
-    
+    <br>
+    <img src="https://i.ibb.co/MVbK724/image.png">
 
 
 4. **Jogos mais antigos**:
@@ -49,6 +50,8 @@ Iremos utilizar a plataforma https://sqliteonline.com/ para treinar comandos SQL
       
      ```
    - **Resultado**
+    <br>
+    <img src="">
     
 
 
@@ -59,6 +62,8 @@ Iremos utilizar a plataforma https://sqliteonline.com/ para treinar comandos SQL
       
      ```
    - **Resultado**
+    <br>
+    <img src="">
     
 
 
@@ -70,6 +75,8 @@ Iremos utilizar a plataforma https://sqliteonline.com/ para treinar comandos SQL
       
      ```
    - **Resultado**
+    <br>
+    <img src="">
     
 
 
