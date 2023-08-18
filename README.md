@@ -59,11 +59,11 @@ Iremos utilizar a plataforma https://sqliteonline.com/ para treinar comandos SQL
    - **Enunciado**: Quais são os 3 jogos do gênero "Aventura" com as maiores vendas na América do Norte?  (copie e cole o comando e as 5 primeiras linhas do resultado aqui)
    - **Query**:
      ```sql
-      
+      SELECT * FROM vgsales_pbi WHERE genre = "Adventure" ORDER BY na_sales DESc LIMIT 3;
      ```
    - **Resultado**
     <br>
-    <img src="">
+    <img src="https://i.ibb.co/bJ0hrbQ/image.png">
     
 
 
@@ -72,11 +72,11 @@ Iremos utilizar a plataforma https://sqliteonline.com/ para treinar comandos SQL
    - **Enunciado**: Liste todos os jogos dos gêneros "RPG" ou "Strategy" lançados após 2005.  (copie e cole o comando e as 5 primeiras linhas do resultado aqui)
    - **Query**:
      ```sql
-      
+      SELECT * FROM vgsales_pbi WHERE genre in ("RPG", "Strategy") and year > 2005 LIMIT 5;
      ```
    - **Resultado**
     <br>
-    <img src="">
+    <img src="https://i.ibb.co/YDTF5rR/image.png ">
     
 
 
