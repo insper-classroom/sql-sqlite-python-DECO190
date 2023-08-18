@@ -47,11 +47,11 @@ Iremos utilizar a plataforma https://sqliteonline.com/ para treinar comandos SQL
    - **Enunciado**: Liste os 5 jogos mais antigos.  (copie e cole o comando e as 5 primeiras linhas do resultado aqui)
    - **Query**:
      ```sql
-      
+      SELECT * FROM vgsales_pbi ORDER BY year LIMIT 5;
      ```
    - **Resultado**
     <br>
-    <img src="">
+    <img src="https://i.ibb.co/jz2QhvQ/image.png">
     
 
 
