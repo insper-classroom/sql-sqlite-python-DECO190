@@ -12,7 +12,7 @@ Iremos utilizar a plataforma https://sqliteonline.com/ para treinar comandos SQL
    - **Enunciado**: Liste todos os jogos disponíveis para a plataforma Xbox One. (copie e cole o comando e as 5 primeiras linhas do resultado aqui)
    - **Query**:
      ```sql
-      SELECT * FROM vgsales_pbi WHERE platform = "XOne";
+      SELECT * FROM vgsales_pbi WHERE platform = "XOne" LIMIT 5;
      ```
    - **Resultado:**
     <br>
@@ -24,7 +24,7 @@ Iremos utilizar a plataforma https://sqliteonline.com/ para treinar comandos SQL
    - **Enunciado**: Liste todos os jogos do gênero "Ação" que foram lançados após 2010.  (copie e cole o comando e as 5 primeiras linhas do resultado aqui)
    - **Query**:
     ```sql
-    SELECT * FROM vgsales_pbi WHERE genre = "Action" and year > 2010;
+    SELECT * FROM vgsales_pbi WHERE genre = "Action" and year > 2010 LIMIT 5;
     ```
    - **Resultado**
     <br>
