@@ -12,3 +12,22 @@ cursor = conn.cursor()
 # Curso
 # Ano de Ingresso
 
+
+# Um cursor é um objeto que permite interagir com o banco de dados, 
+# como executar instruções SQL e recuperar dados.
+cursor = conn.cursor()
+
+# Criar tabela de Livros
+# Usamos o método execute() do cursor para executar instruções SQL.
+# Neste caso, estamos criando uma tabela chamada Livros.
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS Livros (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    Titulo TEXT NOT NULL,
+    Autor TEXT NOT NULL,
+    AnoPublicacao INTEGER,
+    Genero TEXT
+);
+""")
+               
+
