@@ -14,15 +14,16 @@ cursor = conn.cursor()
 
 cursor = conn.cursor()
 
-cursor.execute("""
-CREATE TABLE IF NOT EXISTS Estudantes (
-    ID INTEGER PRIMARY KEY AUTOINCREMENT,
-    Nome TEXT NOT NULL,
-    Curso TEXT NOT NULL,
-    AnoIngresso INTEGER
-);
-""")
-               
+# cursor.execute("""
+# CREATE TABLE IF NOT EXISTS Estudantes (
+#     ID INTEGER PRIMARY KEY AUTOINCREMENT,
+#     Nome TEXT NOT NULL,
+#     Curso TEXT NOT NULL,
+#     AnoIngresso INTEGER
+# );
+# """)
+# conn.commit()
+
 
 # =================================================================================== 01
 # students = [
@@ -37,6 +38,7 @@ CREATE TABLE IF NOT EXISTS Estudantes (
 # INSERT INTO Estudantes (Nome, Curso, AnoIngresso)
 # VALUES (?, ?, ?);
 # """, students)
+# conn.commit()
 
 
 # =================================================================================== 02
@@ -60,8 +62,8 @@ CREATE TABLE IF NOT EXISTS Estudantes (
 
 
 # =================================================================================== 06
-cursor.execute("UPDATE Estudantes SET AnoIngresso = 2018")
-conn.commit()
+# cursor.execute("UPDATE Estudantes SET AnoIngresso = 2018")
+# conn.commit()
 
-cursor.execute("SELECT * FROM Estudantes;")
-print(cursor.fetchall())
+# cursor.execute("SELECT * FROM Estudantes;")
+# print(cursor.fetchall())
