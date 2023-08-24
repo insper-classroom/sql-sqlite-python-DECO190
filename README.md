@@ -72,11 +72,11 @@ Iremos utilizar a plataforma https://sqliteonline.com/ para treinar comandos SQL
    - **Enunciado**: Liste todos os jogos dos gêneros "RPG" ou "Strategy" lançados após 2005.  (copie e cole o comando e as 5 primeiras linhas do resultado aqui)
    - **Query**:
      ```sql
-      SELECT * FROM vgsales_pbi WHERE genre in ("RPG", "Strategy") and year > 2005 LIMIT 5;
+       SELECT * FROM vgsales_pbi WHERE genre in ("Role-Playing", "Strategy") and year > 2005 LIMIT 5;
      ```
    - **Resultado**
     <br>
-    <img src="https://i.ibb.co/YDTF5rR/image.png ">
+    <img src="https://i.ibb.co/SRDhXDP/image.png">
     
 
 
@@ -130,3 +130,6 @@ Considere o arquivo `main_1.py` que vocês trabalharam anteriormente. Nele, vár
 3. No `main_2.py`, importe e utilize as funções do arquivo `db_utils.py` para realizar as operações do Exercício 2.
 
 **Dica:** Ao organizar seu código desta maneira, você estará aplicando o princípio DRY (Don't Repeat Yourself) do desenvolvimento de software, que visa reduzir a repetição de informações de todos os tipos.
+
+
+** Codigos do main_1.py e main_2.py comentados para que fique melhor a execução individual de cada situação **
