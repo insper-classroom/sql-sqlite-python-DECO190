@@ -6,26 +6,18 @@ import sqlite3
 conn = sqlite3.connect('db/database_alunos.sqlite3')
 cursor = conn.cursor()
 
-# Vamos criar uma tabela chamada "Estudantes" com os seguintes campos:
-# ID (chave primária) -  Criado automáticamente pela base de dados
-# Nome
-# Curso
-# Ano de Ingresso
-
-cursor = conn.cursor()
-
-# cursor.execute("""
-# CREATE TABLE IF NOT EXISTS Estudantes (
-#     ID INTEGER PRIMARY KEY AUTOINCREMENT,
-#     Nome TEXT NOT NULL,
-#     Curso TEXT NOT NULL,
-#     AnoIngresso INTEGER
-# );
-# """)
-# conn.commit()
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS Estudantes (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    Nome TEXT NOT NULL,
+    Curso TEXT NOT NULL,
+    AnoIngresso INTEGER
+);
+""")
+conn.commit()
 
 
-# =================================================================================== 01
+# =================================================================================== 01 - Descomentar código abaixo para executar individualmente
 # students = [
 #     ("Ana Silva", "Computação", 2019),
 #     ("Pedro Mendes", "Física", 2021),
@@ -41,27 +33,27 @@ cursor = conn.cursor()
 # conn.commit()
 
 
-# =================================================================================== 02
+# =================================================================================== 02 - Descomentar código abaixo para executar individualmente
 # cursor.execute("SELECT * FROM Estudantes WHERE AnoIngresso in (2019, 2020);")
 # print(cursor.fetchall())
 
 
-# =================================================================================== 03
+# =================================================================================== 03 - Descomentar código abaixo para executar individualmente
 # cursor.execute("UPDATE Estudantes SET AnoIngresso = ? WHERE nome = ?", (2005, "Ana Silva"))
 # conn.commit()
 
 
-# =================================================================================== 04
+# =================================================================================== 04 - Descomentar código abaixo para executar individualmente
 # cursor.execute("DELETE FROM Estudantes WHERE ID = ?", ("2"))
 # conn.commit()
 
 
-# =================================================================================== 05
+# =================================================================================== 05 - Descomentar código abaixo para executar individualmente
 # cursor.execute("SELECT * FROM Estudantes WHERE AnoIngresso > 2019")
 # print(cursor.fetchall())
 
 
-# =================================================================================== 06
+# =================================================================================== 06 - Descomentar código abaixo para executar individualmente
 # cursor.execute("UPDATE Estudantes SET AnoIngresso = 2018")
 # conn.commit()
 
