@@ -11,9 +11,6 @@ def create_table(name, columns):
     conn.commit()
 
 def insert(table, columns, data):
-    print(f"""
-    INSERT INTO {table} ({", ".join(columns)}) VALUES ({", ".join(["?"] * len(columns))});
-    """)
     cursor.executemany(f"""
     INSERT INTO {table} ({", ".join(columns)}) VALUES ({", ".join(["?"] * len(columns))});
     """, data)
