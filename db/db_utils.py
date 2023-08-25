@@ -35,7 +35,7 @@ def update(table, column, new_value, condition):
     cursor.execute(f"UPDATE {table} SET {column} = {new_value} WHERE {condition}")
     conn.commit()
 
-def update_all(table, column, new_value, condition=""):
+def update_all(table, column, new_value):
     cursor.execute(f"UPDATE {table} SET {column} = {new_value}")
     conn.commit()
 
