@@ -132,4 +132,4 @@ Considere o arquivo `main_1.py` que vocês trabalharam anteriormente. Nele, vár
 **Dica:** Ao organizar seu código desta maneira, você estará aplicando o princípio DRY (Don't Repeat Yourself) do desenvolvimento de software, que visa reduzir a repetição de informações de todos os tipos.
 
 
-** Codigos do main_1.py e main_2.py comentados para que fique melhor a execução individual de cada situação **
+** Codigos do main_1.py e main_2.py comentados para que fique melhor a execução individual de cada situação, descomentar cada bloco referente a uma etapa do exercicio **
